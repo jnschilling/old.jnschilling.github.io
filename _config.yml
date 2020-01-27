@@ -24,7 +24,7 @@ github_username:  jnschilling
 
 # Build settings
 markdown: kramdown
-# theme: minima
+theme: minima
 plugins:
   - jekyll-feed
 #  - jekyll-paginate-v2
@@ -44,21 +44,21 @@ exclude:
 #   - vendor/ruby/
 
 # pagination
-permalink: /:year/:month/
-pagination:
-  enabled: true
-  per_page: 12
-  sort_reverse: true
-  limit: 0
-  sort_field: 'date'
-  permalink: '/page/:num/'
-  title: ':title'
-  trail:
-    before: 2
-    after: 2
+# permalink: /:year/:month/
+# pagination:
+#   enabled: true
+#   per_page: 12
+#   sort_reverse: true
+#   limit: 0
+#   sort_field: 'date'
+#   permalink: '/page/:num/'
+#   title: ':title'
+#   trail:
+#     before: 2
+#     after: 2
 
 # multilang
-languages: ['en', 'fr', 'de']
-default_lang: 'en'
-exclude_from_localization: ['javascript', 'images', 'css']
-parallel_localization: false
+# languages: ['en', 'fr', 'de']
+# default_lang: 'en'
+# exclude_from_localization: ['javascript', 'images', 'css']
+# parallel_localization: false
