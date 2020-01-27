@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 Welcome here, 
-Static blog website for Johnny Xmas, illustration of multiple sandboxing processes for strategy think tank.
-For now, the content of this website is just a self-memory of the digital trials.
+Static blog website for Johnny Xmas, illustration of multiple sandboxing processes for personal think tank.
+For now, the content of this website is a self-memory of the digital trials.
 
 This website is build using jekyll, information about jekyll can be found below for:
 

@@ -2,7 +2,7 @@
 layout: post
 permalink: '/jekyll/configuration'
 paginate_path: '/jekyll/:num/configuration/'
-lang: ...
+lang: en
 categories: 'jekyll'
 comments: true
 
