@@ -27,7 +27,7 @@ markdown: kramdown
 theme: jekyll-theme-clean-blog
 plugins:
   - jekyll-feed
-  - jekyll-last-modified-at
+#  - jekyll-last-modified-at
 #  - jekyll-paginate-v2
 #  - jekyll-polyglot
 #  - jekyll-seo-tag
@@ -36,8 +36,10 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-#  - Gemfile
-#  - Gemfile.lock
+ - README.md  
+ - Gemfile
+ - Gemfile.lock
+ - assets/
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/

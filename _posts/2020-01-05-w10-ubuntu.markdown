@@ -1,0 +1,73 @@
+---
+layout: post
+permalink: '/windows/ubuntu-as-wsl'
+paginate_path: '/windows/:num/configuration/'
+lang: en
+categories: 'windows'
+comments: true
+
+title:  "execute Linux under windows"
+date:   2020-01-05 10:58:12 +0100
+categories: Linux
+---
+# Linux as an application
+From dual boot to virtual servers to docker apps, now windows made it possible to run the lastest ubuntu version (debian...) directly on W10.
+## Why doing it ? 
+My first reason is practical.
+The versatility of Ubuntu plateform give the opportunity to stay tuned on Python and Ruby libraries, run them and apply the change on windows files.
+The other reason is that the MS store allow to synchronise multiple device application installation. You install it once and MS store does the rest on the other devices (@home, @work) !
+
+## how does it work ?
+
+1. Run the following command **as administrator** in Powershell (source:[windows-wsl])
+```powershell
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+Restart the computer...
+
+2. Install the application 
+Wait for installation to end
+
+# Update Tweak the Linux
+3. Update ubuntu - one line to ru(i)n it all clean (the version provided is not updated)
+```linux
+	sudo bash -c 'for i in update {,dist-}upgrade auto{remove,clean}; do apt-get $i -y; done'
+```
+	> that's a funny code up thereunb
+4. optional command line what I like to do from the beginning (source:[run-sudo-nopwd])
+allow me to use sudo without password open the **sudoers** file:
+```linux
+	sudo visudo
+```
+5. and add the following line replace `<username>`: 
+```linux
+<username> ALL=(ALL) NOPASSWD: ALL
+```
+I am running this under a session of (secured) windows, so I am not running into security issues doing so.
+
+6. list your windows-files and go to your common dev environment (replace `<windows_user>`)
+```linux
+sudo mount -t drvfs C: /mnt/c/users/<window_user>/dev -o metadata,uid=1000,gid=1000,umask=22,fmask=111
+ll /mnt/c/users/<windows_user>/dev
+cd /mnt/c/users/<windows_user>/dev
+```
+> note `ll` stands for `ls --color=auto -alF `
+
+# your ubuntu W10 instance is ready to boogy!
+ready to start with : [jekyll-install] for example 
+
+## jns backlog:
+- [x] 1. WSL for windows
+- [x] 2. Install the application
+- [x] 3. update ubuntu
+- [x] 4. sudoers
+- [x] 5. sudo no pwd
+- [x] 6. move to dev env
+- [ ] 7. automatic startup in current dev environment 
+
+[windows-trick]: https://devblogs.microsoft.com/commandline/chmod-chown-wsl-improvements/
+[windows-wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+[run-sudo-nopwd]: https://www.tecmint.com/run-sudo-command-without-password-linux/
+[jekyll-install]: https://jekyllrb.com/docs/installation/ubuntu/
+
+{{ page.last_modified_at | date: '%Y-%B-%A-%d-%S:%R' }}
