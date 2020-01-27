@@ -1,14 +1,27 @@
 ---
 layout: post
-title:  "Welcome to Stratej.fr!"
+permalink: '/jekyll/configuration'
+paginate_path: '/jekyll/:num/configuration/'
+lang: ...
+categories: 'jekyll'
+comments: true
+
+title:  "blog.stratej.fr a jekyll build website"
 date:   2020-01-25 10:58:12 +0100
 categories: jekyll update
 ---
-Static web site building has never been so easy.
-Some time ago, I though that wordpress was the most interesting way to build a blog website.
-For project or personal website, the combination of Jekyll, github integration together with markdown usage brings a brand new environment to easy bloging.
+# Static website building has never been so easy.
+I did many trials in website building, I has never been so efficient and (easy). Once it is set up.
+Static website can have many use : 
+- blogging
+- making project pages
+The following combination allows that: 
+- Jekyll builder
+- Github integration
+- Some plugins, many plugins but that you set in text.
 
-As reference, I will keep the jekyll information below for future reference. 
+# As reference below, 
+I will keep the jekyll information below for future reference. 
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
