@@ -24,9 +24,10 @@ github_username:  jnschilling
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-clean-blog
 plugins:
   - jekyll-feed
+  - jekyll-last-modified-at
 #  - jekyll-paginate-v2
 #  - jekyll-polyglot
 #  - jekyll-seo-tag

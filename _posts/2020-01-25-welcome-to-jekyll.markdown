@@ -6,39 +6,33 @@ lang: en
 categories: 'jekyll'
 comments: true
 
-title:  "blog.stratej.fr a jekyll build website"
+title:  "made with jekyll"
 date:   2020-01-25 10:58:12 +0100
 categories: jekyll update
 ---
 # Static website building has never been so easy.
 I did many trials in website building, I has never been so efficient and (easy). Once it is set up.
-Static website can have many use : 
+Static website are done for : 
 - blogging
 - making project pages
+- and why not business models...
+
 The following combination allows that: 
 - Jekyll builder
 - Github integration
-- Some plugins, many plugins but that you set in text.
+- Some plugins, many plugins but that you set in markdown.
 
-# As reference below, 
-I will keep the jekyll information below for future reference. 
+# It is an on going process, 
+I will keep the jekyll sources used for future reference or your instpiration: 
+1. Started with [jekyll-talk]
+2. Installed my local version of ruby/jekyll deployment using [jekyllrb]
+3. Thanks to [Kim], I made a plan of making this blog something look nice
+4. Installation with [dev-yakuza jekyll install]
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
+[Kim]: https://github.com/dev-yakuza
+[jekyllrb]: https://jekyllrb.com/
 [jekyll-talk]: https://talk.jekyllrb.com/
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[dev-yakuza jekyll install]: https://dev-yakuza.github.io/en/jekyll/installation/
+
+{{ page.last_modified_at | date: '%Y-%B-%A-%d-%S:%R' }}

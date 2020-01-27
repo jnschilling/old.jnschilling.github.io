@@ -1,0 +1,1 @@
+<lastmod>{{ post.last_modified_at | date: '%Y-%m-%d' }}</lastmod>
