@@ -1,6 +1,6 @@
 ---
-layout: page
-title: About
+layout: default
+title: About Jxmas being a Stratej
 permalink: /about/
 ---
 Welcome here, 

@@ -1,14 +1,7 @@
 ---
 layout: post
-permalink: '/jekyll/configuration'
-paginate_path: '/jekyll/:num/configuration/'
-lang: en
-categories: 'jekyll'
-comments: true
-
 title:  "made with jekyll"
 date:   2020-01-25 10:58:12 +0100
-categories: jekyll update
 ---
 # Static website building has never been so easy.
 I did many trials in website building, I has never been so efficient and (easy). Once it is set up.

@@ -46,6 +46,8 @@ exclude:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+permalink: /blog/:year/:month/:day/:title
+
 # pagination
 # permalink: /:year/:month/
 # pagination:

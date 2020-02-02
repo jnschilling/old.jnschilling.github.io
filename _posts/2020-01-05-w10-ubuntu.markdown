@@ -1,14 +1,7 @@
 ---
 layout: post
-permalink: '/windows/ubuntu-as-wsl'
-paginate_path: '/windows/:num/configuration/'
-lang: en
-categories: 'windows'
-comments: true
-
 title:  "execute Linux under windows"
 date:   2020-01-05 10:58:12 +0100
-categories: Linux
 ---
 # Linux as an application
 From dual boot to virtual servers to docker apps, now windows made it possible to run the lastest ubuntu version (debian...) directly on W10.
